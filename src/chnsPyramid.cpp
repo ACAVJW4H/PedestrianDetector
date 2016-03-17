@@ -10,6 +10,7 @@
 
 #include "../include/chnsPyramid.hpp"
 
+
 pyrInput::pyrInput(){
     pchns = new pChns();
 

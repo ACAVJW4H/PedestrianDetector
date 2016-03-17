@@ -70,7 +70,7 @@ float* convertFromMat(const Mat& data, int height, int width, int channels,
 };
 
 void writeToMatlab(const float* data, int height, int width, int channels,
-		int misalign, string filename, string name){
+		int misalign, String filename, String name){
     std::ofstream myfile;
     myfile.open(filename.c_str());
 

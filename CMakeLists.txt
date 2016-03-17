@@ -80,7 +80,8 @@ endif(buildROS)
 if(NOT buildROS)
   SET(CMAKE_BUILD_TYPE RELEASE)
   SET(CMAKE_CXX_FLAGS_DEBUG   ""    )
-  SET(CMAKE_CXX_FLAGS_RELEASE "")
+  SET(CMAKE_CXX_FLAGS_RELEASE "-Werror")
+    #-Wall -Werror -pedantic -std=c++1y
 #  INCLUDE_DIRECTORIES("/usr/local/include/")
 endif(NOT buildROS)
 

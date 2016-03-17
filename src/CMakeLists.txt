@@ -20,7 +20,7 @@ endif(NOT buildROS)
 # In my case they were in /usr/lib hence: /usr/lib/libopencv_*.so.
 # This command it is only needed for the native version.
 if(NOT buildROS)
-  file(GLOB folder_opencv /usr/local/lib/libopencv_*.so)
+  file(GLOB folder_opencv /usr/local/lib/libopencv_*.dylib)
 endif(NOT buildROS)
 
 source_group("Source Files" FILES ${folder_source})

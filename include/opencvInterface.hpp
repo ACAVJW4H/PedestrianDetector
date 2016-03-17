@@ -46,7 +46,7 @@ float* convertFromMat(const Mat& data, int height, int width, int channels,
 		int misalign);
 
 void writeToMatlab(const float* data, int height, int width, int channels,
-		int misalign, string filename, string name);
+		int misalign, String filename, String name);
 
 void writeToConsole(const float* data, int height, int width, int channels,
 		int misalign);
